@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+</head>
+<body>
+    <h1>Calculadora Média</h1>
+    <p><strong>Notas</strong></p>
+
+    <input type="number" id="n1"> 1 B <br><br/> 
+    <input type="number" id="n2"> 2 B <br><br/>
+    <input type="number" id="n3"> 3 B <br><br/>
+    <input type="number" id="n4"> 4 B <br><br/>
+             
+
+    <button onclick="calcular()">Calcular</button><br></br>
+    <div id="res"></div>
+
+    <style>
+        body {background-color:aquamarine;}
+    </style>
+      <script>
+          function calcular() {
+
+          var n1= document.getElementById("n1").value
+          var n2= document.getElementById("n2").value
+          var n3= document.getElementById("n3").value
+          var n4= document.getElementById("n4").value        
+          var res= document.getElementById("res")
+          
+          var média = (Number(n1) + Number(n2) + Number(n3) + Number(n4)) /4                          
+          
+          res.innerHTML = ("A Média é : " + média.toFixed(1))
+
+          
+
+        
+        }
+
+        
+               
+          
+
+
+          
+          
+          
+          
+          
+          
+          
+          
+          
+
+      </script>
+    
+    
+    
+    
+    
+    
+</body>
+</html>
